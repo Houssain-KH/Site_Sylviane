@@ -15,7 +15,7 @@ if(!strstr($_SERVER['PHP_SELF'],"index.php")){
         ORDER BY t.ladate DESC
         limit 3;
     ";
-    $image="SELECT * FROM files ORDER BY id DESC limit 3 ;";
+    $image="SELECT * FROM files WHERE type like 'image%'  ORDER BY id DESC limit 3";
 
 $recup_sql = mysqli_query($db,$recup)or die(mysqli_error($db));
 $recup_lulu = mysqli_query($db,$lulu)or die(mysqli_error($db));
@@ -232,7 +232,7 @@ $recup_image = mysqli_query($db,$image)or die(mysqli_error($db));
 					<li><a href="#">Présentation</a></li>
 					<li><a href="#">Autres techniques</a></li>
 					<li><a href="#">Séction privé</a></li>
-					<li><a href="#">témoignage</a></li>
+					<li><a href="#">Témoignage</a></li>
 					<li><a href="#">Contact</a></li>
 				</ul>
 				<p class="footer-company-name">ATHarmony &copy; 2017</p>
@@ -248,7 +248,7 @@ $recup_image = mysqli_query($db,$image)or die(mysqli_error($db));
 			<div class="footer-right col-md-3">
 				<p class="footer-company-about">
 					<span>À propos de nous </span>
-						Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.Lorem ipsum dolor sit amet, consectateur adispicing elit.
+						Sylviane d’At Harmony est au service de votre sérénité et de votre bien-être à Rebecq Quenast et environs ( Tubize, Braine le château, Braine le comte, Hennuyères, Enghien, Virginal, Ittre, Soignies )
 				<div class="footer-icons">
 					<a href="#"><i class="fa fa-facebook"></i></a>
 					<a href="#"><i class="fa fa-twitter"></i></a>

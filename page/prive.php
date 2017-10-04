@@ -3,13 +3,17 @@ if(!strstr($_SERVER['PHP_SELF'],"index.php")){
     header("Location: ./");
 }
 
-	$recup = "SELECT a.id_article, a.titre, a.texte, a.ladate 
+<<<<<<< HEAD
+$recup="SELECT * FROM files WHERE type like 'audio%'  ORDER BY id DESC limit 3";
+=======
+	$recup = "SELECT a.id, a.titre, a.texte, a.ladate 
     FROM article a 
     INNER JOIN admin u
         ON u.idadmin = a.admin_idadmin
         ORDER BY a.ladate DESC
         ;
     ";
+>>>>>>> 01dd880fc444a27315febbf82de4598b1862c4f0
     
 $recup_sql = mysqli_query($db,$recup)or die(mysqli_error($db));
 
@@ -69,7 +73,7 @@ $recup_sql = mysqli_query($db,$recup)or die(mysqli_error($db));
 						
 						<li class="circle hidden-xs hidden-sm"></li>
 						<!-- <li><a class="glyphicon glyphicon-user" href="#"></a></li> -->
-						<li><a class="" href="#">S'inscrire</a></li>
+						<li><a class="" href="#">Connexion</a></li>
 					</ul>
 				</div>
 				<!-- /.navbar-collapse --> 
@@ -77,6 +81,50 @@ $recup_sql = mysqli_query($db,$recup)or die(mysqli_error($db));
 			<!-- /.container --> 
 		</nav>
 	</div>
+<<<<<<< HEAD
+		<div class="row">
+		<section class="col-md-12 col-sm-12 fontstyle">
+			<article class="presentation">
+				<h2 class="titrepresentation">Audio</h2>
+				<div class="wrapper">
+
+			        <table id="acrylic">
+			        
+			            <thead>
+			                <tr>
+			                    <th>Titre</th>
+			                    <th>Description</th>
+			                    <th>Audio</th>
+			                </tr>
+			            </thead>
+			            	<?php
+            while ($ligne = mysqli_fetch_assoc($recup_sql)){
+                ?>
+			            <tbody>
+			                <tr>
+
+			                    <td><?=$ligne['title']?></td>
+			                    <td><?=$ligne['description']?></td>
+			                    <td>    
+			                        <audio controls>
+			                           <?=$ligne['url']?>
+			                        </audio>
+			                    </td>
+			                </tr>
+			                
+			            </tbody>
+			                    <?php
+            }
+            ?>
+			        </table>
+			
+			    </div>
+				
+			</article>
+		</section>
+
+	</div>
+=======
 	<div class="row">
 		<section class="col-md-12 col-sm-12 fontstyle">
 			<article class="presentation">
@@ -97,6 +145,7 @@ $recup_sql = mysqli_query($db,$recup)or die(mysqli_error($db));
 		</section>
 
 	</div>	
+>>>>>>> 01dd880fc444a27315febbf82de4598b1862c4f0
 	<footer class="footer-distributed">
 		<div class="container" style="max-width: 1130px !important;">
 			<img class="col-md-3" src="img/logo1.png" style="width:100px;height:100px;padding:0px;">
@@ -107,7 +156,7 @@ $recup_sql = mysqli_query($db,$recup)or die(mysqli_error($db));
 					<li><a href="#">Présentation</a></li>
 					<li><a href="#">Autres techniques</a></li>
 					<li><a href="#">Séction privé</a></li>
-					<li><a href="#">témoignage</a></li>
+					<li><a href="#">Témoignage</a></li>
 					<li><a href="#">Contact</a></li>
 				</ul>
 				<p class="footer-company-name">ATHarmony &copy; 2017</p>
@@ -123,7 +172,7 @@ $recup_sql = mysqli_query($db,$recup)or die(mysqli_error($db));
 			<div class="footer-right col-md-3">
 				<p class="footer-company-about">
 					<span>À propos de nous </span>
-						Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+						Sylviane d’At Harmony est au service de votre sérénité et de votre bien-être à Rebecq Quenast et environs ( Tubize, Braine le château, Braine le comte, Hennuyères, Enghien, Virginal, Ittre, Soignies )
 				</p>
 				<div class="footer-icons">
 					<a href="#"><i class="fa fa-facebook"></i></a>

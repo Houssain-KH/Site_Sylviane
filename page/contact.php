@@ -53,7 +53,7 @@
 						
 						<li class="circle hidden-xs hidden-sm"></li>
 						<!-- <li><a class="glyphicon glyphicon-user" href="#"></a></li> -->
-						<li><a class="" href="#">S'inscrire</a></li>
+						<li><a class="" href="#">Connexion</a></li>
 					</ul>
 				</div>
 				<!-- /.navbar-collapse --> 
@@ -140,11 +140,14 @@ hr{
 	</style>
 
 	<div class="row">
-		<section class="col-md-12 col-sm-12 fontstyle">
+		<section class="col-md-8 col-md-offset-2 col-sm-12 fontstyle">
 			<article class="presentation">
+<<<<<<< HEAD
+				<h2 class="titrepresentation" style="font-family: 'Dancing Script', cursive; font-size: 50px !important; color: #AA6B29;">Qui suis-je?</h2>
+=======
 				<h2 class="titrepresentation">Qui suis-je?</h2>
+>>>>>>> 01dd880fc444a27315febbf82de4598b1862c4f0
 				<img class='photoprofile' src="img/sylviane.png">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, eveniet. Quae ab doloremque sint labore reprehenderit aliquid, minus aspernatur. Illo architecto consectetur ea nostrum. Natus voluptatem qui ad voluptatum in.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, eveniet. Quae ab doloremque sint labore reprehenderit aliquid, minus aspernatur. Illo architecto consectetur ea nostrum. Natus voluptatem qui ad voluptatum in.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, eveniet. Quae ab doloremque sint labore reprehenderit aliquid, minus aspernatur. Illo architecto consectetur ea nostrum. Natus voluptatem qui ad voluptatum in.</p>
 				<p>La sophrologie par son approche psychocorporelle vise à réharmoniser notre corps, nos émotions et notre mental.  Elle permet de retrouver l’équilibre si précieux pour notre bien-être. </p>
 				<p>Les huiles essentielles et fleurs de Bach par leurs actions sur notre sphère émotionnelle peuvent renforcer les bienfaits de la sophrologie.</p>
 				<p>Des outils d’apprentissage intégrés vous soutiennent non seulement pendant votre scolarité mais aussi tout au long de la vie en optimisant vos activités intellectuelles et vous permettent également d’apporter un soutien plus efficace mais également plus serein aux devoirs de vos enfants </p>
@@ -209,7 +212,7 @@ hr{
 					<li><a href="#">Présentation</a></li>
 					<li><a href="#">Autres techniques</a></li>
 					<li><a href="#">Séction privé</a></li>
-					<li><a href="#">témoignage</a></li>
+					<li><a href="#">Témoignage</a></li>
 					<li><a href="#">Contact</a></li>
 				</ul>
 				<p class="footer-company-name">ATHarmony &copy; 2017</p>
@@ -225,7 +228,7 @@ hr{
 			<div class="footer-right col-md-3">
 				<p class="footer-company-about">
 					<span>À propos de nous </span>
-						Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+						Sylviane d’At Harmony est au service de votre sérénité et de votre bien-être à Rebecq Quenast et environs ( Tubize, Braine le château, Braine le comte, Hennuyères, Enghien, Virginal, Ittre, Soignies )
 				</p>
 				<div class="footer-icons">
 					<a href="#"><i class="fa fa-facebook"></i></a>
